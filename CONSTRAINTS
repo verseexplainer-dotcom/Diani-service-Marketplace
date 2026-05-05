@@ -1,0 +1,21 @@
+#CONSTRAINTS
+
+Build strictly for:
+- Cloudflare free tier
+- Supabase free tier
+
+Rules:
+- Keep frontend static/hybrid
+- Avoid heavy SSR
+- Avoid chat systems
+- Avoid video/media-heavy features
+- Keep DB < 500MB
+- Keep storage < 1GB
+- Minimize egress and writes
+
+If a feature increases:
+- CPU usage
+- request volume
+- storage size
+
+→ simplify or remove it
